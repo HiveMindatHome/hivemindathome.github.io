@@ -9,10 +9,13 @@
 
 ---
 
-## 🌐 Live Interactive Portals
+## 🌐 Live Interactive Portals & 5 Core Languages (`EN` • `FR` • `中文` • `ES` • `DE`)
 
 - **🐝 Community Website & Interactive 5-Screen Cyber-Bee Portal (GitHub Pages)**:  
   👉 **[https://xaviercallens.github.io/HiveMindatHome.github.io/](https://xaviercallens.github.io/HiveMindatHome.github.io/)**
+  - Instant **5-Language Switcher** (`🇬🇧 English`, `🇫🇷 Français`, `🇨🇳 中文`, `🇪🇸 Español`, `🇩🇪 Deutsch`) + URL deep-links (`?lang=fr`, `?lang=en`, `?lang=zh`, `?lang=es`, `?lang=de`) and screen hash navigation (`#screen-overview`, `#screen-join-points`, `#screen-moe-bees`, `#screen-results-carousel`, `#screen-tech-leaderboard`).
+  - **🎬 Interactive 4-Chapter Cyber-Bee & Exoplanet Video Cinema**: Live 30 FPS HTML5 `<video>` + Canvas stream with Play/Pause, Scrubber, `.webm` Video Recording/Download, `.png` Snapshot Download, and embedded high-precision animated SVGs ([`cyber-bee-poster.svg`](./cyber-bee-poster.svg) & [`exoplanet-seti-visual.svg`](./exoplanet-seti-visual.svg)).
+  - **🧪 8-Domain Interactive Examples Gallery**: 1-click live execution across `GWAYA Python/PyTorch E8 Quantizer`, `Gwen / Qwen-2.5 Top-2 Sigma-MoE Router`, `Kepler-186f Exoplanet Transit`, `Green Bank 1420.405 MHz SETI Drift`, `Cyber-Bee Nebula Spectrogram Art`, `Lean 4 Quorum Proof`, `AlphaBio Protein Folding pLDDT`, and `HiveMindFirewall Ed25519 + Multi-Krum Guard`.
 - **⚡ Permanent Low-Cost GCP Cloud Run API & Live Telemetry Gateway**:  
   👉 **[https://hivemind-at-home-ruche-cfhmhmvv5a-uc.a.run.app](https://hivemind-at-home-ruche-cfhmhmvv5a-uc.a.run.app)**
 - **🍯 Pretrained `La Ruche` Community Sparse MoE Weights (SocrateAI GCP Cloud Storage)**:  
