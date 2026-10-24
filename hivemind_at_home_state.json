@@ -1,7 +1,7 @@
 {
   "portal_title": "HiveMind@home \u2022 Cyber-Bee & La Ruche Community Supercomputer",
   "version": "2.6.0",
-  "generated_at_epoch": 1792830934.82123,
+  "generated_at_epoch": 1792832793.200254,
   "github_pages_site_url": "https://xaviercallens.github.io/HiveMindatHome.github.io/",
   "github_pages_repo_url": "https://github.com/xaviercallens/HiveMindatHome.github.io",
   "charter": "Strictly Non-Monetary Compute-Reciprocity Charter (0.00 EUR / 0.00 USD). Share idle GPU when not gaming -> Earn HiveMind Compute Points -> Spend them on Coding, Astrophysics, Visuals & Open MoE Models.",
@@ -1468,5 +1468,5 @@
       }
     ]
   },
-  "dashboard_state_sha256": "34554ed2c0312bf6b6a2a60254733d3a328a415ba876232a72133b6e62064fbd"
+  "dashboard_state_sha256": "ec1f41691ce4d65923b2e9128278b9b27b28861a51f8aefd60c32e3fa34576a9"
 }
