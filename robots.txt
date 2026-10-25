@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hivemindathome.github.io/sitemap.xml

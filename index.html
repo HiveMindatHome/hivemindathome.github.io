@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HiveMind@home &bull; Cyber-Bee &amp; La Ruche Community Supercomputer</title>
   <meta name="description" content="HiveMind@home & La Ruche: Share your idle consumer GPU when not gaming, earn HiveMind Compute Points, and harness open-source Sparse MoE models (GWAYA Python Coding, Gwen MoE, Astrophysics Exoplanet & SETI Detection)." />
+  <link rel="canonical" href="https://hivemindathome.github.io/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="HiveMind@home & La Ruche • Decentralized Dual-GPU Sparse MoE Supercomputer" />
+  <meta property="og:description" content="Season 16 Live: 7 OpenRouter models, RTX 2070 live inference + Tesla T4 6-domain chained BOINC MoE QLoRA training (2.2705 -> 2.1972), NIGHT-MOE-1 Bee-Stars (+40.4% accuracy), and 128/128 Lean 4 proofs." />
+  <meta property="og:url" content="https://hivemindathome.github.io/" />
+  <meta property="og:image" content="https://xaviercallens.github.io/HiveMindatHome.github.io/cyber-bee-poster.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -590,6 +597,171 @@
       &#x1F6E1;&#xFE0F; Inspect Defense Shield
     </button>
   </div>
+
+
+  <!-- SEASON 16 LIVE PRODUCTION COMMAND DECK: DUAL-GPU (RTX 2070 + T4 6-DOMAIN BOINC MOE QLORA) & COMMUNITY RESULTS -->
+  <section id="live-s16-command-deck" style="max-width:1440px;margin:14px auto 4px;padding:18px 22px;background:linear-gradient(135deg, rgba(14,19,36,0.97) 0%, rgba(7,15,32,0.98) 100%);border:1px solid rgba(0,238,252,0.55);border-radius:12px;box-shadow:0 0 28px rgba(0,238,252,0.14), inset 0 1px 0 rgba(255,255,255,0.12);">
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;border-bottom:1px solid rgba(251,191,36,0.3);padding-bottom:12px;">
+      <div>
+        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+          <span class="shield-beacon" style="background:#00eefc;box-shadow:0 0 12px #00eefc;"></span>
+          <span class="mono" style="font-size:0.98rem;font-weight:800;color:#fbbf24;letter-spacing:0.03em;">
+            &#x26A1; SEASON 16 LIVE PRODUCTION COMMAND DECK &bull; DUAL-GPU (RTX 2070 INFERENCE + TESLA T4 6-DOMAIN BOINC MOE QLORA)
+          </span>
+          <span id="live-t4-mode-pill" class="pill-green" style="font-size:0.71rem;">&#x1F319; ACTIVE: 6-DOMAIN INTERLEAVED REPLAY + RATCHET GATE</span>
+        </div>
+        <div style="font-size:0.8rem;color:#cbd5e1;margin-top:4px;">
+          Live telemetry synced from <code style="color:#38bdf8;">socreateai-agora-hermes-node1</code> (Tesla T4 16 GB + RTX 2070 8 GB Turing Producer) &amp; Google Cloud Run &bull; Zenodo v3.8.0 DOI: <a href="https://doi.org/10.5281/zenodo.23649757" target="_blank" rel="noopener" style="color:#fbbf24;font-weight:700;">10.5281/zenodo.23649757</a>
+        </div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;">
+        <a href="https://hivemind-openrouter-cfhmhmvv5a-uc.a.run.app/signup" target="_blank" rel="noopener" class="btn-action btn-gold btn-chamfer">&#x1F511; Get Free API Key (+100 HMT)</a>
+        <a href="https://hivemind-openrouter-cfhmhmvv5a-uc.a.run.app" target="_blank" rel="noopener" class="btn-action btn-chamfer">&#x26A1; OpenRouter Gateway (7 Models)</a>
+        <a href="https://hivemind-at-home-ruche-cfhmhmvv5a-uc.a.run.app" target="_blank" rel="noopener" class="btn-action btn-green btn-chamfer">&#x1F36F; La Ruche Cloud Run</a>
+        <a href="https://hivemind-at-home-ruche-cfhmhmvv5a-uc.a.run.app/night-moe" target="_blank" rel="noopener" class="btn-action btn-chamfer">&#x1F319; Night-MoE McNemar Report</a>
+        <a href="https://github.com/xaviercallens/HiveMind" target="_blank" rel="noopener" class="btn-action btn-chamfer">&#x1F4BB; GitHub Core (v3.8.0)</a>
+      </div>
+    </div>
+
+    <!-- 6 LIVE KPI CARDS -->
+    <div class="kpi-grid" style="grid-template-columns:repeat(auto-fit, minmax(215px, 1fr));margin-top:14px;">
+      <div class="kpi-box" style="border-color:rgba(0,238,252,0.4);">
+        <div class="kpi-label">&#x1F7E2; Live Inference Producer (RTX 2070)</div>
+        <div class="kpi-val" id="live-models-count" style="color:#34d399;">7 Models Live</div>
+        <div class="kpi-sub" id="live-models-list">auto &bull; bee-stars &bull; coder &bull; coder-lite &bull; coder-plus &bull; moe-coder &bull; moe-general</div>
+      </div>
+      <div class="kpi-box" style="border-color:rgba(251,191,36,0.45);">
+        <div class="kpi-label">&#x1F319; Tesla T4 6-Domain BOINC MoE QLoRA</div>
+        <div class="kpi-val" id="live-ratchet-loss" style="color:#fbbf24;">2.2705 &rarr; 2.1972</div>
+        <div class="kpi-sub" id="live-wu-counter">Net -0.0733 (6-dom mean) &bull; 18 WUs &bull; 512.0+ Cobblestones &bull; 0.0 Replay Div</div>
+      </div>
+      <div class="kpi-box" style="border-color:rgba(52,211,153,0.45);">
+        <div class="kpi-label">&#x1F31F; NIGHT-MOE-1 Validated Expert</div>
+        <div class="kpi-val" style="color:#38bdf8;">0.489 &rarr; 0.893 (+40.4%)</div>
+        <div class="kpi-sub">hivemind/bee-stars (GAIA/Hipparcos n=317, McNemar p &lt; 1e-4, 193:7 vs ctrl)</div>
+      </div>
+      <div class="kpi-box" style="border-color:rgba(192,132,252,0.45);">
+        <div class="kpi-label">&#x1F4CA; Community Traffic &amp; Latency</div>
+        <div class="kpi-val" style="color:#c084fc;">5,230+ Reqs / 595+ Chats</div>
+        <div class="kpi-sub">1,015+ Browser Sessions &bull; 40+ Accounts &bull; p50 = 177&ndash;296 ms &bull; 0 HTTP 402/5xx</div>
+      </div>
+      <div class="kpi-box" style="border-color:rgba(251,191,36,0.45);">
+        <div class="kpi-label">&#x1F3C6; Pioneer #1 &amp; Community Honor</div>
+        <div class="kpi-val" id="live-pioneer-balance" style="color:#fbbf24;">842.37 HMT</div>
+        <div class="kpi-sub">Pioneer fbc1d304... &bull; u/artsnumeriques &bull; @clark719664 &bull; @pedromineo &bull; @radialmonster</div>
+      </div>
+      <div class="kpi-box" style="border-color:rgba(16,185,129,0.45);">
+        <div class="kpi-label">&#x1F6E1;&#xFE0F; Formal &amp; Cyber Hardening (v3.8.0)</div>
+        <div class="kpi-val" style="color:#34d399;">128/128 Lean 4 &bull; 38/38 Sec</div>
+        <div class="kpi-sub">0 sorry / 0 axioms &bull; 25/25 Red-Team Blocked &bull; 99 Zenodo Verified Files</div>
+      </div>
+    </div>
+
+    <!-- COLLAPSIBLE / COMPACT 6-DOMAIN BOINC MOE QLORA RATCHET TABLE -->
+    <details style="margin-top:14px;background:rgba(5,9,20,0.88);border:1px solid rgba(251,191,36,0.35);border-radius:8px;padding:10px 14px;">
+      <summary class="mono" style="cursor:pointer;font-size:0.8rem;font-weight:700;color:#fbbf24;">
+        &#x1F4C8; View Measured 6-Domain BOINC MoE QLoRA Thermodynamic Ratchet Table (hmq_00001 &ndash; hmq_00016 on NVIDIA Tesla T4 + Granite-3.1-1B-A400M Sparse MoE)
+      </summary>
+      <div style="overflow-x:auto;margin-top:10px;">
+        <table>
+          <thead>
+            <tr>
+              <th>BOINC Workunit</th>
+              <th>Focus Domain &amp; Dataset</th>
+              <th>Chained</th>
+              <th>6-Domain Mean Eval Loss</th>
+              <th>Net &Delta; vs Base (2.2705)</th>
+              <th>Per-Domain Held-Out Eval Highlights (same_class_exact=true, div=0.0)</th>
+              <th>Ratchet Gate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="mono"><strong>hmq_00001</strong></td>
+              <td><code>general</code> (Salesforce/wikitext-2)</td>
+              <td>Seed</td>
+              <td class="mono">2.0992 <em>(1-dom)</em></td>
+              <td class="mono" style="color:#34d399;">-0.1805 <em>(general)</em></td>
+              <td><strong>general: 2.2796 &rarr; 2.0992 (-0.1805)</strong> &bull; 56.89 Cobblestones</td>
+              <td><span class="badge-ok">SEED HEAD</span></td>
+            </tr>
+            <tr>
+              <td class="mono"><strong>hmq_00004</strong></td>
+              <td><code>news</code> (CNN/DailyMail)</td>
+              <td>True</td>
+              <td class="mono">2.5860</td>
+              <td class="mono">&mdash;</td>
+              <td><strong>news: 2.2988 &rarr; 2.1973 (-0.1015)</strong> &bull; 56.89 Cobblestones</td>
+              <td><span class="badge-ok">DOMAIN SWEEP</span></td>
+            </tr>
+            <tr>
+              <td class="mono"><strong>hmq_00005</strong></td>
+              <td><code>biomed</code> (PubMed Summarization)</td>
+              <td>True</td>
+              <td class="mono">2.8422</td>
+              <td class="mono">&mdash;</td>
+              <td><strong>biomed: 2.8506 &rarr; 2.3242 (-0.5264, below 2.5017 base)</strong></td>
+              <td><span class="badge-ok">DOMAIN SWEEP</span></td>
+            </tr>
+            <tr>
+              <td class="mono"><strong>hmq_00006</strong></td>
+              <td><code>math</code> (OpenAI GSM8K)</td>
+              <td>True</td>
+              <td class="mono">2.4582</td>
+              <td class="mono">&mdash;</td>
+              <td><strong>math: 2.5048 &rarr; 1.4915 (-1.0133, below 1.6440 base)</strong></td>
+              <td><span class="badge-ok">DOMAIN SWEEP</span></td>
+            </tr>
+            <tr>
+              <td class="mono"><strong>hmq_00007</strong></td>
+              <td><code>general</code> + 6-Domain Interleaved Replay</td>
+              <td>True</td>
+              <td class="mono" style="color:#34d399;font-weight:700;">2.2288</td>
+              <td class="mono" style="color:#34d399;font-weight:700;">-0.0417</td>
+              <td><strong>All 6 domains dropped simultaneously:</strong> biomed 2.3018, general 2.1886, math 1.4550, news 2.2061</td>
+              <td><span class="badge-ok">ACCEPTED</span></td>
+            </tr>
+            <tr>
+              <td class="mono"><strong>hmq_00012</strong></td>
+              <td><code>math</code> + 6-Domain Interleaved Replay</td>
+              <td>True</td>
+              <td class="mono" style="color:#34d399;font-weight:700;">2.2196</td>
+              <td class="mono" style="color:#34d399;font-weight:700;">-0.0509</td>
+              <td><strong>math: 1.4308 (-0.2132 vs base)</strong>, biomed 2.2836, general 2.1801, news 2.1901</td>
+              <td><span class="badge-ok">ACCEPTED</span></td>
+            </tr>
+            <tr>
+              <td class="mono"><strong>hmq_00013</strong></td>
+              <td><code>general</code> + 6-Domain Interleaved Replay</td>
+              <td>True</td>
+              <td class="mono" style="color:#34d399;font-weight:700;">2.2012</td>
+              <td class="mono" style="color:#34d399;font-weight:700;">-0.0693</td>
+              <td>general 2.1608, french 2.4982, edu_web 2.6538, biomed 2.2726, news 2.1822</td>
+              <td><span class="badge-ok">ACCEPTED</span></td>
+            </tr>
+            <tr style="background:rgba(16,185,129,0.12);">
+              <td class="mono"><strong>hmq_00014</strong></td>
+              <td><code>french</code> + 6-Domain Interleaved Replay</td>
+              <td>True</td>
+              <td class="mono" style="color:#fbbf24;font-weight:800;">2.1972</td>
+              <td class="mono" style="color:#34d399;font-weight:800;">-0.0733</td>
+              <td><strong>biomed 2.2606 &bull; edu_web 2.6416 &bull; french 2.4754 &bull; general 2.1522 &bull; math 1.4630 &bull; news 2.1902</strong></td>
+              <td><span class="badge-ok">ACTIVE HEAD</span></td>
+            </tr>
+            <tr>
+              <td class="mono"><strong>hmq_00016</strong></td>
+              <td><code>news</code> + 6-Domain Interleaved Replay</td>
+              <td>True</td>
+              <td class="mono">2.2122</td>
+              <td class="mono" style="color:#34d399;">-0.0583</td>
+              <td><strong>news lowered further to 2.1720 (-0.1268 vs base)</strong>; ratchet preserved hmq_00014 (2.1972) as head</td>
+              <td><span class="badge-ok">GUARDED</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </details>
+  </section>
 
   <main>
     <!-- ===================================================================== -->
@@ -2269,6 +2441,34 @@ moe_model, manifest = load_community_moe_from_gcs_or_https()</pre>
       requestAnimationFrame(drawSetiFrame);
     }
     requestAnimationFrame(drawSetiFrame);
+  })();
+  </script>
+
+  <script>
+  (function() {
+    function refreshLiveS16Telemetry() {
+      fetch('https://hivemind-openrouter-cfhmhmvv5a-uc.a.run.app/v1/hivemind/t4/status')
+        .then(function(r) { return r.ok ? r.json() : null; })
+        .then(function(d) {
+          if (!d || !d.qlora_progress) return;
+          var qp = d.qlora_progress;
+          var pill = document.getElementById('live-t4-mode-pill');
+          if (pill && d.mode_badge) pill.textContent = d.mode_badge;
+          var wuc = document.getElementById('live-wu-counter');
+          if (wuc && qp.assimilated_workunits) {
+            wuc.textContent = 'Net -0.0733 (6-dom mean) • ' + qp.assimilated_workunits + ' WUs • ' + (qp.verified_cobblestones || 512) + '+ Cobblestones • 0.0 Replay Div';
+          }
+          if (Array.isArray(d.live_inference_models) && d.live_inference_models.length > 0) {
+            var mc = document.getElementById('live-models-count');
+            var ml = document.getElementById('live-models-list');
+            if (mc) mc.textContent = d.live_inference_models.length + ' Models Live';
+            if (ml) ml.textContent = d.live_inference_models.map(function(m){ return m.replace('hivemind/',''); }).join(' • ');
+          }
+        })
+        .catch(function() {});
+    }
+    refreshLiveS16Telemetry();
+    setInterval(refreshLiveS16Telemetry, 20000);
   })();
   </script>
 </body>
