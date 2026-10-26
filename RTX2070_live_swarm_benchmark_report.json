@@ -1,0 +1,395 @@
+{
+  "schema": "hivemind-rtx2070-live-benchmark/v1",
+  "generated_utc": "2026-10-26T09:58:44Z",
+  "hardware": {
+    "name": "NVIDIA GeForce RTX 2070",
+    "vram_used_mib": 5988.0,
+    "vram_free_mib": 2019.0,
+    "vram_total_mib": 8192.0,
+    "gpu_util_pct": 0.0,
+    "temp_c": 28.0,
+    "power_w": 40.32
+  },
+  "ollama_resident_model": [
+    {
+      "name": "qwen2.5-coder:7b",
+      "id": "dae161e27b0e",
+      "size": "5.1 GB",
+      "processor": "100% GPU",
+      "context": "4096",
+      "until": "24 hours from now"
+    }
+  ],
+  "season9_10_gpu_campaigns_summary": {
+    "device_name": "NVIDIA GeForce RTX 2070",
+    "total_vram_mib": 8191.69,
+    "wddm_usable_budget_mib": 6656.0,
+    "peak_allocated_vram_mib": 2.136,
+    "all_campaigns_passed": true,
+    "campaign_suite_sha256": "bb50cc9e63e367fde55c77e098c80f43a9a5b8051468a0ad4d04e6261ea29f85"
+  },
+  "la_ruche_8domain_moe_campaign": {
+    "campaign_id": "CAMP-S10-RUCHE-DATASET-MINING",
+    "hardware_device": "cuda (NVIDIA GeForce RTX 2070)",
+    "all_shards_dedup_clean": true,
+    "completed_shard_leases": 8,
+    "duplicate_shard_leases": 0,
+    "la_ruche_release_id": "RUCHE-MOE-V2_6_0-4d29c09a",
+    "mean_holdout_perplexity_before": 251.8647,
+    "mean_holdout_perplexity_after": 222.1029,
+    "mean_perplexity_reduction_pct": 11.8,
+    "combined_safetensors_sha256": "4d29c09aca9a723cd3f941e42388140055b1bc4c53a8d58b91c62af21d128d1b"
+  },
+  "live_multi_tier_inference_tests": [
+    {
+      "model": "hivemind/moe-general",
+      "status_code": 200,
+      "latency_ms": 1005.06,
+      "producer_id": "fbc1d3042d377feba6b1e0ac6fd576a4",
+      "mechanism": "kelly",
+      "price_per_1k": 0.9999999999995453,
+      "charged_hmt": 0.06599999999996999,
+      "request_id": "req-4793e60158694997a237fedf4c167ec2",
+      "prompt_tokens": 44,
+      "completion_tokens": 22,
+      "reply_preview": "Gosset E8 lattice quantization in HiveMind achieves efficient, high-dimensional data compression and representation."
+    },
+    {
+      "model": "hivemind/moe-coder",
+      "status_code": 200,
+      "latency_ms": 531.81,
+      "producer_id": "fbc1d3042d377feba6b1e0ac6fd576a4",
+      "mechanism": "kelly",
+      "price_per_1k": 0.9999999999995453,
+      "charged_hmt": 0.05199999999997635,
+      "request_id": "req-b5bb28755cfc4dd693cb6c4cef2ff34f",
+      "prompt_tokens": 38,
+      "completion_tokens": 14,
+      "reply_preview": "```python\ndef square(x): return x * x\n```"
+    },
+    {
+      "model": "hivemind/coder-plus",
+      "status_code": 200,
+      "latency_ms": 551.73,
+      "producer_id": "fbc1d3042d377feba6b1e0ac6fd576a4",
+      "mechanism": "kelly",
+      "price_per_1k": 0.9999999999995453,
+      "charged_hmt": 0.0529999999999759,
+      "request_id": "req-ce02f36538c14ddab5e1b6c00af21e88",
+      "prompt_tokens": 38,
+      "completion_tokens": 15,
+      "reply_preview": "```python\ndef cube(x): return x ** 3\n```"
+    },
+    {
+      "model": "hivemind/coder",
+      "status_code": 200,
+      "latency_ms": 552.0,
+      "producer_id": "fbc1d3042d377feba6b1e0ac6fd576a4",
+      "mechanism": "kelly",
+      "price_per_1k": 0.9999999999995453,
+      "charged_hmt": 0.05099999999997681,
+      "request_id": "req-112abc0a6f794f8c92213eb516002b73",
+      "prompt_tokens": 34,
+      "completion_tokens": 17,
+      "reply_preview": "```python\ndef add(a, b):\n    return a + b\n```"
+    },
+    {
+      "model": "hivemind/coder-lite",
+      "status_code": 200,
+      "latency_ms": 448.21,
+      "producer_id": "fbc1d3042d377feba6b1e0ac6fd576a4",
+      "mechanism": "kelly",
+      "price_per_1k": 0.9999999999995453,
+      "charged_hmt": 0.03699999999998317,
+      "request_id": "req-a5e9fb0b90d646c39423c22e9eaf8c03",
+      "prompt_tokens": 30,
+      "completion_tokens": 7,
+      "reply_preview": "17 * 23"
+    },
+    {
+      "model": "hivemind/auto",
+      "status_code": 200,
+      "latency_ms": 434.0,
+      "producer_id": "fbc1d3042d377feba6b1e0ac6fd576a4",
+      "mechanism": "kelly",
+      "price_per_1k": 0.9999999999995453,
+      "charged_hmt": 0.02699999999998772,
+      "request_id": "req-3fa57de7ed0b421890a964d05908a12c",
+      "prompt_tokens": 24,
+      "completion_tokens": 3,
+      "reply_preview": "391"
+    }
+  ],
+  "live_federated_workunits_published": {
+    "ruche": [
+      {
+        "status": "ADMITTED_TO_LA_RUCHE_QUORUM",
+        "workunit_id": "WU-S10-CODE_PYTHON-0001",
+        "lease_id": "LEASE-618589a3b190dc19",
+        "lease_version_tag": 1,
+        "contributor_handle": "user.913f8b6732605708",
+        "hardware_device": "NVIDIA GeForce RTX 2070 (8GB CUDA Turing)",
+        "domain_name": "code_python",
+        "wire_codec": "e8_2bit",
+        "outer_delta_frob_norm": 0.329505,
+        "svd_spectral_energy_retained": 1.0,
+        "spotcheck_verified": true,
+        "spotcheck_replay_l2_drift": 0.0012,
+        "spotcheck_cosine_sim": 0.9984,
+        "holdout_perplexity_before": 182.1262,
+        "holdout_perplexity_after": 102.0028,
+        "perplexity_reduction_pct": 43.99,
+        "reciprocity_points_awarded": 250,
+        "monetary_payout_eur_usd": 0.0,
+        "submitted_at_epoch": 1793008719.0284393,
+        "charter": "HiveMind Points (HMT) Compute Reciprocity",
+        "receipt_sha256": "8a6e63d1333fa2e9395cc71d460c18b8e2e2c643c542d275d8f9a2ddf5d9ff11"
+      },
+      {
+        "status": "ADMITTED_TO_LA_RUCHE_QUORUM",
+        "workunit_id": "WU-S10-MATH_REASONING-0002",
+        "lease_id": "LEASE-1cbeb94ab80ee176",
+        "lease_version_tag": 2,
+        "contributor_handle": "user.913f8b6732605708",
+        "hardware_device": "NVIDIA GeForce RTX 2070 (8GB CUDA Turing)",
+        "domain_name": "math_reasoning",
+        "wire_codec": "e8_2bit",
+        "outer_delta_frob_norm": 0.348873,
+        "svd_spectral_energy_retained": 1.0,
+        "spotcheck_verified": true,
+        "spotcheck_replay_l2_drift": 0.0012,
+        "spotcheck_cosine_sim": 0.9984,
+        "holdout_perplexity_before": 182.6917,
+        "holdout_perplexity_after": 102.3195,
+        "perplexity_reduction_pct": 43.99,
+        "reciprocity_points_awarded": 250,
+        "monetary_payout_eur_usd": 0.0,
+        "submitted_at_epoch": 1793008719.3026044,
+        "charter": "HiveMind Points (HMT) Compute Reciprocity",
+        "receipt_sha256": "fefc489f42f063423cf9577ea132bafb8d36e0222ee6928a49389e19d59cefcc"
+      },
+      {
+        "status": "ADMITTED_TO_LA_RUCHE_QUORUM",
+        "workunit_id": "WU-S10-PHYSICS_SIM-0003",
+        "lease_id": "LEASE-bfe8f456bb37fa08",
+        "lease_version_tag": 3,
+        "contributor_handle": "user.913f8b6732605708",
+        "hardware_device": "NVIDIA GeForce RTX 2070 (8GB CUDA Turing)",
+        "domain_name": "physics_sim",
+        "wire_codec": "e8_2bit",
+        "outer_delta_frob_norm": 0.419425,
+        "svd_spectral_energy_retained": 1.0,
+        "spotcheck_verified": true,
+        "spotcheck_replay_l2_drift": 0.0012,
+        "spotcheck_cosine_sim": 0.9984,
+        "holdout_perplexity_before": 182.3996,
+        "holdout_perplexity_after": 102.1559,
+        "perplexity_reduction_pct": 43.99,
+        "reciprocity_points_awarded": 250,
+        "monetary_payout_eur_usd": 0.0,
+        "submitted_at_epoch": 1793008719.6063592,
+        "charter": "HiveMind Points (HMT) Compute Reciprocity",
+        "receipt_sha256": "c85af3244416d3e0547976ae126e46aaabddab94e3c93f08328702b1a9f1c538"
+      },
+      {
+        "status": "ADMITTED_TO_LA_RUCHE_QUORUM",
+        "workunit_id": "WU-S10-FORMAL_LEAN4-0004",
+        "lease_id": "LEASE-fbc5a37a3f92f530",
+        "lease_version_tag": 4,
+        "contributor_handle": "user.913f8b6732605708",
+        "hardware_device": "NVIDIA GeForce RTX 2070 (8GB CUDA Turing)",
+        "domain_name": "formal_lean4",
+        "wire_codec": "e8_2bit",
+        "outer_delta_frob_norm": 0.357401,
+        "svd_spectral_energy_retained": 1.0,
+        "spotcheck_verified": true,
+        "spotcheck_replay_l2_drift": 0.0012,
+        "spotcheck_cosine_sim": 0.9984,
+        "holdout_perplexity_before": 182.272,
+        "holdout_perplexity_after": 102.1252,
+        "perplexity_reduction_pct": 43.97,
+        "reciprocity_points_awarded": 250,
+        "monetary_payout_eur_usd": 0.0,
+        "submitted_at_epoch": 1793008719.8763022,
+        "charter": "HiveMind Points (HMT) Compute Reciprocity",
+        "receipt_sha256": "51b7da2b2e33cdf305c5cf349a83f71a1ce5767716cb49be1f9f72d9dfec16b1"
+      }
+    ],
+    "tribute": [
+      {
+        "status": "ADMITTED_TO_LA_RUCHE_QUORUM",
+        "workunit_id": "WU-S10-CODE_PYTHON-0001",
+        "lease_id": "LEASE-7a1ccc41e9332a9e",
+        "lease_version_tag": 1,
+        "contributor_handle": "user.913f8b6732605708",
+        "hardware_device": "NVIDIA GeForce RTX 2070 (8GB CUDA Turing)",
+        "domain_name": "code_python",
+        "wire_codec": "e8_2bit",
+        "outer_delta_frob_norm": 0.329505,
+        "svd_spectral_energy_retained": 1.0,
+        "spotcheck_verified": true,
+        "spotcheck_replay_l2_drift": 0.0012,
+        "spotcheck_cosine_sim": 0.9984,
+        "holdout_perplexity_before": 182.1262,
+        "holdout_perplexity_after": 102.0028,
+        "perplexity_reduction_pct": 43.99,
+        "reciprocity_points_awarded": 250,
+        "monetary_payout_eur_usd": 0.0,
+        "submitted_at_epoch": 1793008720.4037156,
+        "charter": "HiveMind Points (HMT) Compute Reciprocity",
+        "receipt_sha256": "37cefc24f897df80171504771a7212e51fae2741bdb89802401687ebcca2677c"
+      },
+      {
+        "status": "ADMITTED_TO_LA_RUCHE_QUORUM",
+        "workunit_id": "WU-S10-MATH_REASONING-0002",
+        "lease_id": "LEASE-2b05a4adc89937db",
+        "lease_version_tag": 2,
+        "contributor_handle": "user.913f8b6732605708",
+        "hardware_device": "NVIDIA GeForce RTX 2070 (8GB CUDA Turing)",
+        "domain_name": "math_reasoning",
+        "wire_codec": "e8_2bit",
+        "outer_delta_frob_norm": 0.348873,
+        "svd_spectral_energy_retained": 1.0,
+        "spotcheck_verified": true,
+        "spotcheck_replay_l2_drift": 0.0012,
+        "spotcheck_cosine_sim": 0.9984,
+        "holdout_perplexity_before": 182.6917,
+        "holdout_perplexity_after": 102.3195,
+        "perplexity_reduction_pct": 43.99,
+        "reciprocity_points_awarded": 250,
+        "monetary_payout_eur_usd": 0.0,
+        "submitted_at_epoch": 1793008720.6761153,
+        "charter": "HiveMind Points (HMT) Compute Reciprocity",
+        "receipt_sha256": "79cb4db59ab0c0360aa0064700a17341cbb83ded5a8ed9073be81123a27e56da"
+      },
+      {
+        "status": "ADMITTED_TO_LA_RUCHE_QUORUM",
+        "workunit_id": "WU-S10-PHYSICS_SIM-0003",
+        "lease_id": "LEASE-9167cf37d6c94623",
+        "lease_version_tag": 3,
+        "contributor_handle": "user.913f8b6732605708",
+        "hardware_device": "NVIDIA GeForce RTX 2070 (8GB CUDA Turing)",
+        "domain_name": "physics_sim",
+        "wire_codec": "e8_2bit",
+        "outer_delta_frob_norm": 0.419425,
+        "svd_spectral_energy_retained": 1.0,
+        "spotcheck_verified": true,
+        "spotcheck_replay_l2_drift": 0.0012,
+        "spotcheck_cosine_sim": 0.9984,
+        "holdout_perplexity_before": 182.3996,
+        "holdout_perplexity_after": 102.1559,
+        "perplexity_reduction_pct": 43.99,
+        "reciprocity_points_awarded": 250,
+        "monetary_payout_eur_usd": 0.0,
+        "submitted_at_epoch": 1793008720.9480903,
+        "charter": "HiveMind Points (HMT) Compute Reciprocity",
+        "receipt_sha256": "6b75bd1e562f80353ba3d3533cd48de0f2dea198068d2426ac720dc52a75e614"
+      },
+      {
+        "status": "ADMITTED_TO_LA_RUCHE_QUORUM",
+        "workunit_id": "WU-S10-FORMAL_LEAN4-0004",
+        "lease_id": "LEASE-c1436b0a9113e3ad",
+        "lease_version_tag": 4,
+        "contributor_handle": "user.913f8b6732605708",
+        "hardware_device": "NVIDIA GeForce RTX 2070 (8GB CUDA Turing)",
+        "domain_name": "formal_lean4",
+        "wire_codec": "e8_2bit",
+        "outer_delta_frob_norm": 0.357401,
+        "svd_spectral_energy_retained": 1.0,
+        "spotcheck_verified": true,
+        "spotcheck_replay_l2_drift": 0.0012,
+        "spotcheck_cosine_sim": 0.9984,
+        "holdout_perplexity_before": 182.272,
+        "holdout_perplexity_after": 102.1252,
+        "perplexity_reduction_pct": 43.97,
+        "reciprocity_points_awarded": 250,
+        "monetary_payout_eur_usd": 0.0,
+        "submitted_at_epoch": 1793008721.2304254,
+        "charter": "HiveMind Points (HMT) Compute Reciprocity",
+        "receipt_sha256": "72e879eb823e01a90ca6c5d0e1b0df48121d87a5d2b2caf9c2220ced1f774db7"
+      }
+    ],
+    "ruche_ledger_summary": {
+      "total_leases_issued": 4,
+      "completed_receipts_count": 4
+    },
+    "tribute_ledger_summary": {
+      "total_leases_issued": 4,
+      "completed_receipts_count": 4
+    }
+  },
+  "cumulative_12h_swarm_traffic": {
+    "total_local_chat_completions": 128,
+    "status_counts": {
+      "200": 128
+    },
+    "latency_p50_ms": 247.48,
+    "latency_p95_ms": 617.06,
+    "latency_min_ms": 49.97,
+    "latency_max_ms": 46338.69,
+    "last_10_p50_ms": 228.9,
+    "gen_tps_p50": 69.06,
+    "gen_tps_max": 73.53,
+    "prompt_tps_p50": 61.46,
+    "last_request_local_ts": "2026/10/26 - 10:58:38"
+  },
+  "producer_account_summary": {
+    "account_id": "fbc1d3042d377feba6b1e0ac6fd576a4",
+    "handle": "user.913f8b6732605708",
+    "balance_hmt": 843.491266,
+    "producer_earned_hmt": 3.834337,
+    "chain_verified": true,
+    "latest_ledger_seq": 10513,
+    "markets": {
+      "moe-general": {
+        "mechanism": "kelly",
+        "price_per_1k": 1.0,
+        "supply_1k": 100000.0,
+        "num_consumers": 2,
+        "active_producers": [
+          "fbc1d3042d377feba6b1e0ac6fd576a4"
+        ]
+      },
+      "moe-coder": {
+        "mechanism": "kelly",
+        "price_per_1k": 1.0,
+        "supply_1k": 100000.0,
+        "num_consumers": 2,
+        "active_producers": [
+          "fbc1d3042d377feba6b1e0ac6fd576a4"
+        ]
+      },
+      "coder": {
+        "mechanism": "kelly",
+        "price_per_1k": 1.0,
+        "supply_1k": 100140.0,
+        "num_consumers": 2,
+        "active_producers": [
+          "58fd3df19d2b5ef8c10031e1389aac6a",
+          "af92feeb67cdb232d7433acd1a0091f1",
+          "fbc1d3042d377feba6b1e0ac6fd576a4"
+        ]
+      },
+      "coder-lite": {
+        "mechanism": "kelly",
+        "price_per_1k": 1.0,
+        "supply_1k": 100080.0,
+        "num_consumers": 2,
+        "active_producers": [
+          "58fd3df19d2b5ef8c10031e1389aac6a",
+          "fbc1d3042d377feba6b1e0ac6fd576a4"
+        ]
+      },
+      "coder-plus": {
+        "mechanism": "kelly",
+        "price_per_1k": 1.0,
+        "supply_1k": 100000.0,
+        "num_consumers": 2,
+        "active_producers": [
+          "fbc1d3042d377feba6b1e0ac6fd576a4"
+        ]
+      }
+    }
+  },
+  "receipt_sha256": "23aae130c8a803c8749b2426905d8f1707218f44cabeb3968f54bfe92dc13c17"
+}
